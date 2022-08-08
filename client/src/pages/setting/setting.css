@@ -1,0 +1,65 @@
+.setting{
+    display: flex;
+    margin-top: 10px;
+}
+.settingWrapper{
+    flex: 9;
+    padding:20px;
+}
+.settingWrapper img{
+    width:100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 60px;
+}
+.settingPP{
+ display: flex;
+ align-items: center;
+}
+
+.settingTitle{
+    
+
+    
+    
+}
+.settingTitle input{
+    display: none;
+}
+.remove{
+    margin-left: 15px;
+    background-color: white;
+    color:#2f4f4f;
+    border-color: #2f4f4f;;
+    font-size: 15px;
+    border: none;
+}
+.UpdateInfo{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5px 5px 5px;
+}
+.name{
+    border:none;
+    border-bottom: 1px solid #2f4f4f;
+}
+.email{
+margin-top: 10px;
+border:none;
+border-bottom: 1px solid #2f4f4f;
+}
+.password{
+margin-top: 10px;
+border:none;
+border-bottom: 1px solid #2f4f4f;
+}
+.button{
+    background-color: teal;
+    color:white;
+    border-radius: 5px;
+    width:100px;
+    height:30px;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+    

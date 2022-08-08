@@ -1,0 +1,47 @@
+.write{
+    margin: 5px 5px 5px 5px; 
+}
+.myfile{
+    display: none;
+}
+.writeImgWrapper{
+   
+
+}
+.writeImg{
+width:90%;
+height:300px;
+margin-left: 100px;
+border-radius: 20px;
+object-fit: cover;
+}
+.writeGroup{  
+    margin-left: 100px;
+}
+.title{
+    border: 2px solid #2f4f4f;;
+    border-radius: 2px;
+    width: 50%;
+}
+.publish{
+    margin-left: 100px;
+}
+.writeStory{
+
+  border-radius: 2px;
+  width:53.2%;
+  letter-spacing: 9.5px;
+  box-shadow: 1px 1px 1px 1px #2f4f4f;;
+}
+#myfile{
+    display: none;
+}
+.publish{
+    position: relative;
+    left: 41%;
+    font-size: 17px;
+    border-radius: 5px;
+    
+
+   
+}
