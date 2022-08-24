@@ -1,12 +1,22 @@
 const express = require('express')
 const app = express()
+const dotenv = require('dotenv')
+const mongoose = require('mongoose')
+const auth = require('./Routes/authjs')
+app.use(express.json())
+dotenv.config()
 
-app.use('/main', (req, res) => {
-  console.log('hello lasean')
-})
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
+}).then(console.log('connected to mongoDB'))
+  .catch(err => console.log(err))
 
-app.listen(7000, () => {
-  console.log('app listening')
+app.use('/auth', auth)
+
+app.listen(3000, () => {
+  console.log('app listenings')
 })
 /* const express = require('express')
 const app = express()
