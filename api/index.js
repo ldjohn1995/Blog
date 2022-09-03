@@ -3,6 +3,7 @@ const app = express()
 const dotenv = require('dotenv')
 const mongoose = require('mongoose')
 const auth = require('./Routes/authjs')
+const user = require('./Routes/user')
 app.use(express.json())
 dotenv.config()
 
@@ -14,8 +15,9 @@ mongoose.connect(process.env.MONGODB_URI, {
   .catch(err => console.log(err))
 
 app.use('/auth', auth)
+app.use('/api/user', user)
 
-app.listen(3000, () => {
+app.listen(1000, () => {
   console.log('app listenings')
 })
 /* const express = require('express')
